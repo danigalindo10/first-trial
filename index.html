@@ -1,13 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <h2>Hello! we are developers!</h2>
-</body>
-</html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!---Navetation bar--->
+<main id="main-doc">
+  <nav id="navbar" class="p-4">
+   
+  <header><strong>
+    Javascript for fools.</strong>
+  </header>
+    
+    <a class="nav-link" href="#what_is_javascript?">What is Javascript?</a>
+    <a  class="nav-link" href="#the_javascript_console">The Javascript console</a>
+    <a class="nav-link" href="#how_does_javascript_work?">How does Javascript work?</a>
+    <a  class="nav-link" href="#basic_concepts">Basic concepts</a>
+    <a  class="nav-link" href="#basic_functions">Basic functions</a>
+  </nav>
+  
+  <div class="content" class="p-5">
+  <section class="main-section" id="what_is_javascript?">
+    <header><strong>What is Javascript?</strong></header>
+  <p>Javascript is a programming language, a mechanism with which we can tell our browser what tasks it must perform, in what order and how many times.</p>
+  <p>Many of the tasks we perform with HTML and CSS could be done with Javascript. In fact, it is very likely that at first it seems to us that it is much more complicated to do it with Javascript, and that therefore it is not worth it. However, over time we will see that Javascript offers us greater flexibility and a wider range of possibilities, and that well used, they can save us a lot of time.</p>
+  <code>
+    </code>
+  </section>
+  
+  <section class="main-section" id="the_javascript_console">
+    <header><strong>The Javascript console</strong></header>
+  <p>To access the browser's Javascript console, we can press CTRL+SHIFT+I on the tab of the website in question, which will take us to the Browser Elements Inspector. This inspector is a general control panel where we can see several aspects of the page we are on: its HTML tagging, its CSS styles, etc...
+
+Specifically, we are interested in a particular section of the element inspector. To do this, we will move to the Console tab and we will already find ourselves in the Javascript console of the page.
+
+You can also directly use the CTRL+SHIFT+J keyboard shortcut, which in some browsers takes us directly to the console.
+
+In this console, we can write Javascript functions or statements that will be acting on the page in the current browser tab. In this way we will be able to observe the results it returns to us on the console when performing different actions. To do this, let's look at some bases:
+
+The console
+
+The classic first example when you start programming is to create a program that displays text on the screen, usually the text "Hello World". We can also perform, for example, numerical operations.</p>
+   <p>In the Javascript console we can do this in a very simple way:</p>
+  <code>
+    console.log('Hello World!');
+    console.log(2+2);
+    </code>
+    <p>In the first line, we will see that pressing enter shows us the text "Hello World". In the second line, however, it processes the operation and returns 4. To display these texts on the Javascript console we have used the console.log function, but there are several more.</p>
+  </section>
+
+  <section class="main-section" id="how_does_javascript_work?">
+    <header><strong>How does Javascript work?</strong></header>
+  <p>The general outline of a web page is an HTML document where all the HTML tags of the page are located. Throughout that document, there may be references or relationships to other documents, such as CSS files or Javascript files.
+
+For example, if a reference to a CSS file is found within the HTML document, the browser downloads it and applies it to the HTML document, changing its visual appearance. In the same way, if you find a reference to a Javascript file, the browser downloads it and executes the commands or actions indicated therein.</p>
+   <p> 
+     <strong>Example of an online script</strong>
+
+In this first and simple example, we only have one document: the HTML file. There is a label on it </script> That contains the Javascript commands or lines that tell the browser that you have to do (in this case, show a "Hello!" On the console):
+  </section>
+  <code></code>
+  
+  <section class="main-section" id="basic_concepts">
+    <header><strong>Basic concepts</strong></header>
+  <p>
+    <ul>
+      <li>Program: In programming it is usually called «program» To the total set of code you develop. In Javascript, perhaps the most commonly used term is web application (when it is a development with a lot of Javascript). They are also usually generalized using terms such as «script» o «Javascript code».</li>
+      <li>Algorithm: An algorithm is a set of known steps, in a certain order, to achieve a task satisfactorily and achieve a goal.</li>
+      <li>Comments: Comments in our code are fragments of text or annotations that the browser ignores and do not affect the program. They serve to write down important details for the programmer. This way, when we return to the code, it will be faster for us to understand it. It is a good habit to comment as much as possible on our code.</li>
+      <li>Indentation: The action of placing spaces or tabs before the code is called indentation, to indicate if we are inside an if, a loop, etc... This practice is very important and necessary, and we will delve into it later.</li>
+      <li>Variables: It is the generic name given to small memory spaces where you store certain information, very similar to unknowns in mathematics. A program can have many variables, and each of them will have a name, a value and a data type. The name is used to differentiate them from each other and refer to them, the value is the information they contain and the type of data is the nature of that value. They are called variables because we can change their value throughout the program, as needed.</li>
+    </ul>
+    </p>
+  <code>
+    x = 5         // name: x, value: 5, data type: number
+    y = "Hello"    // name: y, value: Hello, data type: text
+    Manz = "me"   // name: Manz, value: me, data type: text
+  </code>
+  </section>
+  
+  <section class="main-section" id="basic_functions">
+    <header><strong>Basic functions</strong></header>
+  <p>The functions allow us to group lines of code into tasks with a name, so that, later, we can refer to that name to do everything that is grouped in that task. To use functions, you have to do 2 things:
+<ul>
+   <li> Declare the function: Prepare the function, give it a name and tell you the tasks you will perform.</li>
+   <li> Run the function: "Call" the function to perform the tasks of its content.</li>
+</ul>
+ </p>
+<p>
+   Declaration
+
+In the following example we will see the statement of a function called say hello:
+   <code>
+    // Declaration of the "greet" function
+function greet() {
+  // Contents of the function
+  console.log('Hello, I'm a function');
+}
+</code> 
+</p> 
+<p>Execution
+
+Let's look, now, at the complete example with declaration and execution:
+  <code>
+    // Declaration of the "greet" function
+function greet() {
+  // Contents of the function
+  console.log('Hello, I'm a function');
+}
+
+// Execution of the function
+greet();
+  </code>
+</p>
+
+  </section>
+  </div>
+</main>

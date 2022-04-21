@@ -1,0 +1,10 @@
+#navbar {
+    background-color: #eee;
+  }
+  
+  @media (min-width: 768px) {
+    #main-doc {
+      display:flex;
+      background-color: green;
+    }
+  }
